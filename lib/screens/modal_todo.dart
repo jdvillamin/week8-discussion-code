@@ -12,7 +12,7 @@ import 'package:week7_networking_discussion/providers/todo_provider.dart';
 class TodoModal extends StatelessWidget {
   String type;
   int todoIndex;
-  TextEditingController _formFieldController = TextEditingController();
+  final TextEditingController _formFieldController = TextEditingController();
 
   TodoModal({super.key, required this.type, required this.todoIndex});
 
@@ -116,10 +116,10 @@ class TodoModal extends StatelessWidget {
           onPressed: () {
             Navigator.of(context).pop();
           },
-          child: Text("Cancel"),
           style: TextButton.styleFrom(
             textStyle: Theme.of(context).textTheme.labelLarge,
           ),
+          child: const Text("Cancel"),
         ),
       ],
     );

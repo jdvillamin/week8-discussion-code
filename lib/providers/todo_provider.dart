@@ -8,7 +8,7 @@ import 'package:flutter/material.dart';
 import '../models/todo_model.dart';
 
 class TodoListProvider with ChangeNotifier {
-  List<Todo> _todoList = [
+  final List<Todo> _todoList = [
     Todo(
       completed: true,
       userId: 1,

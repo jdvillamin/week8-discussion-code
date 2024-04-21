@@ -15,7 +15,7 @@ void main() {
       providers: [
         ChangeNotifierProvider(create: ((context) => TodoListProvider())),
       ],
-      child: MyApp(),
+      child: const MyApp(),
     ),
   );
 }
